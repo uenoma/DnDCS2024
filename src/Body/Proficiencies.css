@@ -1,0 +1,46 @@
+.Proficiencies {
+  display: flex;
+  flex-direction: column;
+  width: 394px;
+  border: solid 2px gray;
+  margin-bottom: 10px;
+}
+
+.ProficienciesTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.ProficienciesArmorGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.ProficienciesGroup label {
+  font-size: 12px;
+  line-height: 0;
+}
+
+.ProficienciesGroupCaption {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.ProficienciesGroup {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px gray;
+}
+
+.ProficienciesGroup textarea {
+  height: 60px;
+  border: none;
+  resize: none;
+  margin: 0 5px 0 5px;
+}

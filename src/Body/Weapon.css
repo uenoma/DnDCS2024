@@ -1,0 +1,71 @@
+.Weapon {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4px);
+  border: solid 2px gray;
+  margin-bottom: 10px;
+}
+
+.WeaponTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.WeaponTable {
+  font-size: 9px;
+  color: gray;
+  text-align: left;
+  margin: 10px;
+}
+
+
+.WeaponTableCol1 {
+  height: 22px;
+  width: 30%;
+  border-bottom: solid 1px gray;
+  border-right: solid 1px gray;
+  padding: 0 5px 0 5px;
+}
+
+.WeaponTableCol2 {
+  width: 20%;
+  text-align: center;
+  border-bottom: solid 1px gray;
+  border-right: solid 1px gray;
+  padding: 0 5px 0 5px;
+}
+
+.WeaponTableCol2 input {
+  text-align: center;
+}
+
+.WeaponTableCol3 {
+  width: 20%;
+  text-align: center;
+  border-bottom: solid 1px gray;
+  border-right: solid 1px gray;
+  padding: 0 5px 0 5px;
+}
+
+.WeaponTableCol3 input {
+  text-align: center;
+}
+
+.WeaponTableCol4 {
+  width: 30%;
+  border-bottom: solid 1px gray;
+  padding: 0 5px 0 5px;
+}
+
+
+.WeaponTable input {
+  width: 95%;
+  border: none;
+}
+
+.WeaponGroup {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,122 @@
+.Status {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px gray;
+  margin-left: 10px;
+  width: 400px;
+  height: 160px;
+}
+
+.Status label {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.StatusHP {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  border-right: solid 1px gray;
+}
+
+.StatusHPGroup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.StatusHPLeft {
+  width: 50%;
+  border-right: solid 1px gray;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.StatusHPRight {
+  width: 50%;
+ 
+}
+
+.StatusHPCurrent {
+  width: 60px;
+  height: 80px;
+  text-align: center;
+  border: none;
+  border-bottom: solid 1px gray;
+  font-size: 20px;
+}
+
+.StatusHPTemp {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: solid 1px gray;
+  font-size: 20px;
+}
+
+.StatusHPMax {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: solid 1px gray;
+  font-size: 20px;
+}
+
+
+.StatusHitDice {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  border-right: solid 1px gray;
+ 
+}
+
+.StatusHitDiceGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%; 
+}
+
+.StatusHitDiceGroup input {
+  margin: 0;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: solid 1px gray;
+}
+
+.StatusDeathSaves {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+
+}
+
+.StatusDeathSavesGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%; 
+  margin-bottom: 5px;
+}
+
+.StatusDeathSavesGroupItem {
+  margin: 5px 10px 0 10px;
+}
+

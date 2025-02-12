@@ -1,0 +1,38 @@
+.Features {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4px);
+  border: solid 2px gray;
+  margin-bottom: 10px;
+}
+
+.FeaturesTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.FeaturesContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.FeaturesContentLeft {
+  width: 50%;
+  border-right: solid 1px gray;
+  margin: 5px;
+}
+
+.FeaturesContentRight {
+  width: 50%;
+  margin: 5px;
+}
+
+.FeaturesContent textarea{
+  border: none;
+  resize: none;
+  width: 95%;
+  height: 400px;
+
+}

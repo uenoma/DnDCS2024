@@ -1,0 +1,78 @@
+.BasicInfo {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding-top: 0 10px 10px 10px;
+  border: solid 2px gray;
+  height: 160px;
+}
+
+.BasicInfoLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.BasicInfoItem {
+  height: 35px;
+  margin: 10px 5px 5px 5px;
+}
+
+.BasicInfoItem input {
+  border: none;
+  height: 30px;
+}
+
+.BasicInfoItemValueLarge {
+  width: 350px;
+}
+
+.BasicInfoItemValueSmall {
+  width: 170px;
+}
+
+.BasicInfoItemCaption {
+  font-size: 10px;
+  font-weight: bold;
+  border-top: solid 1px gray;
+  width: 100%;
+}
+
+.BasicInfoRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  padding-top: 10px;
+  border-radius: 100px 100px 100px 100px;
+  border: solid 1px gray;
+  height: 140px;
+}
+
+.BasicInfoRightItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+}
+
+.BasicInfoRightItem input {
+  width: 80px;
+  border: none;
+  text-align: center;
+}
+
+.BasicInfoItemRightCaption {
+  font-size: 10px;
+  font-weight: bold;
+  border-top: solid 1px gray;
+  width: 100%;
+  text-align: center;
+}
+
+.BasicInfoItemValue {
+  height: 30px;
+  width: 100%;
+}

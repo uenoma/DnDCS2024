@@ -1,0 +1,152 @@
+.Ability {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+
+.AbilityLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.AbilityRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.AbilityItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  margin: 0 10px 10px 0;
+  border: solid 2px gray;
+}
+
+.AbilityItem.Inspiration {
+  height: 140px;
+}
+
+.AbilityItemCaption {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.AbilityItemValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 5px 0 0 0;
+}
+
+.AbilityItemValueSet {
+  width: 100%;
+}
+
+.AbilityItemValueSet div {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.AbilityItemProficiency {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.AbilityItemModifier {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin: 0;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.AbilityItemScore {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 0 0 0 5px;
+  border: solid 1px gray;
+  font-size: 20px;
+}
+
+.AbilityItemValueCheck {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+
+.AbilityItemSavingThrow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0 5px 0;
+  width: 100%;
+  border-top: solid 1px gray;
+}
+
+.AbilityItemSavingThrowItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0 0 0 5px;
+  padding-top: 5px;
+  width: 90%;
+}
+
+.AbilityItemSavingThrowValue {
+  width: 30px;
+  height: 20px;
+  border: none;
+  margin: 0 5px 0 5px;
+  text-align: center;
+  border-bottom: solid 1px gray ;
+}
+
+.AbilityItemSavingThrow label {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.AbilityItemSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  border-top: solid 1px gray;
+}
+
+.AbilityItemSkillItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0 0 0 5px;
+  padding-top: 5px;
+  width: 90%;
+
+}
+
+.AbilityItemSkillItemValue {
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  border: none;
+  border-bottom: solid 1px gray;
+  margin: 0 5px 0 5px;
+}
+
+.AbilityItemSkillItem label {
+  font-size: 10px;
+}

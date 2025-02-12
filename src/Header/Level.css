@@ -1,0 +1,44 @@
+.Level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  padding-top: 10px;
+  border-radius: 80px 80px 80px 80px;
+  border: solid 2px gray;
+  height: 150px;
+  margin-left: 10px;
+}
+
+.LevelItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+}
+
+#LevelLevel {
+  font-size: 16px;
+}
+
+.LevelItem input {
+  width: 90px;
+  border: none;
+  text-align: center;
+}
+
+.LevelItemRightCaption {
+  font-size: 10px;
+  font-weight: bold;
+  border-top: solid 1px gray;
+  width: 100%;
+  text-align: center;
+}
+
+.LevelItemValue {
+  height: 30px;
+  width: 100%;
+}
