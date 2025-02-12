@@ -48,7 +48,8 @@ function App() {
     };
     console.log("saveData = ", saveData)
 
-    const fileName = saveData.name + "_Lv" + saveData.level + ".json";
+    const name = saveData.name.length > 0 ? saveData.name : "noname";
+    const fileName = name + "_" + saveData.level + ".json";
 
     const blob = new Blob([JSON.stringify(saveData, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
