@@ -5,7 +5,6 @@ function BasicInfo(props) {
 
   useEffect(() => {
     if (props.data) {
-      console.log("props.data = ", props.data)
       document.getElementById('BasicInfoCharacterName').value = props.data.name;
       document.getElementById('BasicInfoBackground').value = props.data.background;
       document.getElementById('BasicInfoClass').value = props.data.class;

@@ -9,8 +9,18 @@ import Weapon from './Body/Weapon';
 import Features from './Body/Features';
 import SpeciesTraits from './Body/SpeciesTraits';
 import Feats from './Body/Feats';
+import { useEffect } from 'react';
 
 function Sheet(props) {
+
+  useEffect(() => {
+    if (props.data) {
+      document.getElementById('initiative').value = props.data.initiative;
+      document.getElementById('speed').value = props.data.speed.walk;
+      document.getElementById('size').value = props.data.size;
+      document.getElementById('passive_perception').value = props.data.passive_perception;
+    }
+  }, [props]);
 
   return (
     <div className="Sheet">
@@ -25,36 +35,36 @@ function Sheet(props) {
       </div>
       <div className="SheetBody">
         <div className="SheetBodyLeft">
-          <Ability></Ability>
-          <Proficiencies></Proficiencies>
+          <Ability data={props.data} ></Ability>
+          <Proficiencies data={props.data} ></Proficiencies>
         </div>
         <div className="SheetBodyRight">
           <div className="SheetBodyRightTop">
             <div className="SheetBodyRightTopItem">
               <label>イニシアチブ<br></br>(INITIATIVE)</label>
-              <input></input>
+              <input id="initiative"></input>
             </div>
             <div className="SheetBodyRightTopItem">
               <label>移動速度<br></br>(SPEED)</label>
-              <input></input>
+              <input id="speed"></input>
             </div>
             <div className="SheetBodyRightTopItem">
               <label>サイズ<br></br>(SIZE)</label>
-              <input></input>
+              <input id="size"></input>
             </div>
             <div className="SheetBodyRightTopItem">
               <label>受動知覚<br></br>(PASSIVE PERCEPTION)</label>
-              <input></input>
+              <input id="passive_perception"></input>
             </div>
           </div>
           <div className="SheetBodyRightMiddle">
-            <Weapon></Weapon>
-            <Features></Features>
+            <Weapon data={props.data}></Weapon>
+            <Features data={props.data}></Features>
           </div>
           <div className="SheetBodyRightBottom">
             <div className="SheetBodyRightBottomGroup">
-              <SpeciesTraits></SpeciesTraits>
-              <Feats></Feats>
+              <SpeciesTraits data={props.data}></SpeciesTraits>
+              <Feats data={props.data}></Feats>
             </div>
           </div>
         </div>

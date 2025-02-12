@@ -2,18 +2,18 @@
   width: 100%;
 }
 
-@media print{
-  .AppHeader{
-      display: none;
-  }
-}
-
 .AppHeader {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin: 10px;
+}
+
+@media print{
+  .AppHeader{
+      display: none;
+  }
 }
 
 .AppHeaderSave {

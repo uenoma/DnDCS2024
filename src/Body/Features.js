@@ -1,6 +1,15 @@
 import './Features.css';
+import { useEffect } from 'react';
 
-function Features() {
+function Features(props) {
+
+  useEffect(() => {
+    if (props.data) {
+      document.getElementById('class_features1').value = props.data.class_features[0];
+      document.getElementById('class_features2').value = props.data.class_features[1];
+    }
+  }, [props]);
+
   return (
     <div className="Features">
       <div className="FeaturesTitle">
@@ -8,10 +17,10 @@ function Features() {
       </div>
       <div className="FeaturesContent">
         <div className="FeaturesContentLeft">
-          <textarea></textarea>
+          <textarea id="class_features1"></textarea>
         </div>
         <div className="FeaturesContentRight">
-          <textarea></textarea>
+          <textarea id="class_features2"></textarea>
         </div>
       </div>
 

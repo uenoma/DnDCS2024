@@ -7,7 +7,7 @@
 
 @page {
   size: A4 portrait;
-  margin: 0;
+  margin: 5px;
 }
 
 .SheetHeader {
@@ -73,7 +73,7 @@
   border: none;
   margin: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .SheetBodyRightMiddle {
