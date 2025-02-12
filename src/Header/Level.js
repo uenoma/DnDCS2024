@@ -1,6 +1,15 @@
 import './Level.css';
+import { useEffect } from 'react';
 
-function Level() {
+function Level(props) {
+
+  useEffect(() => {
+    if (props.data) {
+      document.getElementById('LevelLevel').value = props.data.level;
+      document.getElementById('LevelXP').value = props.data.xp;
+    }
+  }, [props]);
+
 
   return (
     <div className="Level">

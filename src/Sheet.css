@@ -17,6 +17,16 @@
   margin-bottom: 10px;
 }
 
+.SheetSeparator {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  width: calc(100% - 4px);
+
+}
+
 .SheetBody {
   display: flex;
   flex-wrap: wrap;
@@ -54,6 +64,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: white;
 }
 
 .SheetBodyRightTopItem input {
@@ -73,9 +84,6 @@
 
 .SheetBodyRightBottom {
   height: 100%;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
 }
 
 .SheetBodyRightBottomGroup {
@@ -86,4 +94,14 @@
   flex-wrap: row;
   justify-content: space-between;
  
+}
+
+.SheetFooter {
+  font-size: 8px;
+}
+
+@media print{
+  .SheetFooter{
+      display: none;
+  }
 }

@@ -10,14 +10,18 @@ import Features from './Body/Features';
 import SpeciesTraits from './Body/SpeciesTraits';
 import Feats from './Body/Feats';
 
-function Sheet() {
+function Sheet(props) {
+
   return (
     <div className="Sheet">
       <div className="SheetHeader">
-        <BasicInfo />
-        <Level />
-        <ArmorClass />
-        <Status />
+        <BasicInfo data={props.data} />
+        <Level data={props.data} />
+        <ArmorClass data={props.data} />
+        <Status data={props.data} />
+      </div>
+      <div className="SheetSeparator">
+        <label>Dungeons & Dragons</label>
       </div>
       <div className="SheetBody">
         <div className="SheetBodyLeft">
@@ -54,6 +58,9 @@ function Sheet() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="SheetFooter">
+        このページはファンコンテンツ・ポリシーに沿った非公式のファンコンテンツです。ウィザーズ社の認可/許諾は得ていません。題材の一部に、ウィザーズ・オブ・ザ・コースト社の財産を含んでいます。©Wizards of the Coast LLC.
       </div>
     </div>
   );

@@ -9,17 +9,15 @@
 }
 
 .AppHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   margin: 10px;
 }
 
 .AppHeaderSave {
   width: 200px;
-  height: 50px;
   margin-right: 10px;
 }
 
-.AppHeaderLoad {
-  width: 200px;
-  height: 50px;
-  user-select: none;
-}

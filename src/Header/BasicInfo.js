@@ -1,6 +1,19 @@
 import './BasicInfo.css';
+import { useEffect } from 'react';
 
-function BasicInfo() {
+function BasicInfo(props) {
+
+  useEffect(() => {
+    if (props.data) {
+      console.log("props.data = ", props.data)
+      document.getElementById('BasicInfoCharacterName').value = props.data.name;
+      document.getElementById('BasicInfoBackground').value = props.data.background;
+      document.getElementById('BasicInfoClass').value = props.data.class;
+      document.getElementById('BasicInfoSpecies').value = props.data.species;
+      document.getElementById('BasicInfoSubclass').value = props.data.subclass;
+    }
+  }, [props]);
+
 
   return (
     <div className="BasicInfo">

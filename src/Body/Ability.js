@@ -1,6 +1,22 @@
 import './Ability.css';
 
 function Ability() {
+
+  const abilityItemSet = () => {
+    return (
+      < div className="AbilityItemSet" >
+        <div className="AbilityItemValueSet">
+          <input className="AbilityItemModifier"></input>
+          <div><label>修正値<br></br>(MODIFIER)</label></div>
+        </div>
+        <div className="AbilityItemValueSet">
+          <input className="AbilityItemScore"></input>
+          <div><label>能力値<br></br>(SCORE)</label></div>
+        </div>
+      </div >
+    );
+  }
+
   return (
     <div className="Ability">
       <div className="AbilityLeft">
@@ -16,16 +32,7 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>筋力 (STRENGTH)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
 
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
@@ -47,16 +54,8 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>敏捷力 (DEXTERITY)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
+
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
               <input type="checkbox"></input>
@@ -87,16 +86,8 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>耐久力 (CONSTITUTION)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
+
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
               <input type="checkbox"></input>
@@ -119,16 +110,8 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>知力 (INTELLIGENCE)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
+
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
               <input type="checkbox"></input>
@@ -168,16 +151,8 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>判断力 (WISDOM)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
+
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
               <input type="checkbox"></input>
@@ -218,16 +193,8 @@ function Ability() {
           <div className="AbilityItemCaption">
             <label>魅力 (CHARISMA)</label>
           </div>
-          <div className="AbilityItemValue">
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemModifier"></input>
-              <div><label>修正値<br></br>(MODIFIER)</label></div>
-            </div>
-            <div className="AbilityItemValueSet">
-              <input className="AbilityItemScore"></input>
-              <div><label>能力値<br></br>(SCORE)</label></div>
-            </div>
-          </div>
+          {abilityItemSet()}
+
           <div className="AbilityItemSavingThrow">
             <div className="AbilityItemSavingThrowItem">
               <input type="checkbox"></input>

@@ -7,11 +7,13 @@
 .AbilityLeft {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .AbilityRight {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .AbilityItem {
@@ -21,6 +23,7 @@
   width: 190px;
   margin: 0 10px 10px 0;
   border: solid 2px gray;
+  background-color: white;
 }
 
 .AbilityItem.Inspiration {
@@ -34,12 +37,20 @@
   margin: 0;
 }
 
+.AbilityItemSet {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0 10px 0 10px;
+}
+
 .AbilityItemValue {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
   margin: 5px 0 0 0;
+  width: 100%;
 }
 
 .AbilityItemValueSet {
@@ -57,7 +68,7 @@
   width: 80px;
   text-align: center;
   margin: 0 0 10px 0;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   font-size: 30px;
 }
 

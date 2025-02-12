@@ -4,6 +4,7 @@
   width: calc(100% - 4px);
   border: solid 2px gray;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 .WeaponTitle {
