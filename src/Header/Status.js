@@ -7,7 +7,7 @@ function Status(props) {
     if (props.data) {
       document.getElementById('StatusHPCurrent').value = props.data.hp.value;
       document.getElementById('StatusHPTemp').value = props.data.hp.temp;
-      document.getElementById('StatusHPMax').value = props.data.hp.hit_dice;
+      document.getElementById('StatusHPMax').value = props.data.hp.max;
       document.getElementById('StatusHitDiceSpent').value = props.data.hp.hit_dice_spent;
       document.getElementById('StatusHitDiceMax').value = props.data.hp.hit_dice;
       document.getElementById('DeathSavesSuccess1').checked = props.data.death_saves.successes[0];
