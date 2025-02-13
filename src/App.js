@@ -232,9 +232,13 @@ function App() {
   return (
     <div className="App">
       <div className="AppHeader">
-        <button className="AppHeaderSave" onClick={(e) => { exportFile(e) }}>保存</button>
-        <input type="file" accept=".json" onChange={(e) => { selectedFile(e) }}></input>
-        <label className="AppHeaderAutoSave"><input type="checkbox" id="autoSave" ></input>自動保存</label>
+        <div className="AppHeaderSave">
+          <button onClick={(e) => { exportFile(e) }}>保存</button>
+          <label className="AppHeaderAutoSave"><input type="checkbox" id="autoSave" ></input>自動保存</label>
+        </div>
+        <div className="AppHeaderLoad">
+          <input type="file" accept=".json" onChange={(e) => { selectedFile(e) }}></input>
+        </div>
       </div>
       <Sheet data={data} />
     </div>
