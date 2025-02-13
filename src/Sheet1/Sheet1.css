@@ -1,4 +1,4 @@
-.Sheet {
+.Sheet1 {
   width: 1060px;
   height: 1480;
   margin: 10px;
@@ -10,14 +10,14 @@
   margin: 5px;
 }
 
-.SheetHeader {
+.Sheet1Header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.SheetSeparator {
+.Sheet1Separator {
   font-size: 16px;
   text-align: center;
   font-weight: bold;
@@ -27,19 +27,19 @@
 
 }
 
-.SheetBody {
+.Sheet1Body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 
-.SheetBodyLeft {
+.Sheet1BodyLeft {
   display: flex;
   flex-direction: column;
   margin: 0;
 }
 
-.SheetBodyRight {
+.Sheet1BodyRight {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
@@ -47,13 +47,13 @@
   justify-content: space-between;
 }
 
-.SheetBodyRightTop {
+.Sheet1BodyRightTop {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.SheetBodyRightTopItem {
+.Sheet1BodyRightTopItem {
   border: solid 2px gray;
   width: 150px;
   height: 108px;
@@ -67,7 +67,7 @@
   background-color: white;
 }
 
-.SheetBodyRightTopItem input {
+.Sheet1BodyRightTopItem input {
   width: 100px;
   height: 50px;
   border: none;
@@ -76,17 +76,17 @@
   font-size: 20px;
 }
 
-.SheetBodyRightMiddle {
+.Sheet1BodyRightMiddle {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.SheetBodyRightBottom {
+.Sheet1BodyRightBottom {
   height: 100%;
 }
 
-.SheetBodyRightBottomGroup {
+.Sheet1BodyRightBottomGroup {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -96,12 +96,3 @@
  
 }
 
-.SheetFooter {
-  font-size: 8px;
-}
-
-@media print{
-  .SheetFooter{
-      display: none;
-  }
-}

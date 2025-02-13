@@ -1,4 +1,4 @@
-import './Sheet.css';
+import './Sheet1.css';
 import BasicInfo from './Header/BasicInfo';
 import ArmorClass from './Header/ArmorClass';
 import Level from './Header/Level';
@@ -11,7 +11,7 @@ import SpeciesTraits from './Body/SpeciesTraits';
 import Feats from './Body/Feats';
 import { useEffect } from 'react';
 
-function Sheet(props) {
+function Sheet1(props) {
 
   useEffect(() => {
     if (props.data) {
@@ -23,57 +23,54 @@ function Sheet(props) {
   }, [props]);
 
   return (
-    <div className="Sheet">
-      <div className="SheetHeader">
+    <div className="Sheet1">
+      <div className="Sheet1Header">
         <BasicInfo data={props.data} />
         <Level data={props.data} />
         <ArmorClass data={props.data} />
         <Status data={props.data} />
       </div>
-      <div className="SheetSeparator">
+      <div className="Sheet1Separator">
         <label>Dungeons & Dragons</label>
       </div>
-      <div className="SheetBody">
-        <div className="SheetBodyLeft">
+      <div className="Sheet1Body">
+        <div className="Sheet1BodyLeft">
           <Ability data={props.data} ></Ability>
           <Proficiencies data={props.data} ></Proficiencies>
         </div>
-        <div className="SheetBodyRight">
-          <div className="SheetBodyRightTop">
-            <div className="SheetBodyRightTopItem">
+        <div className="Sheet1BodyRight">
+          <div className="Sheet1BodyRightTop">
+            <div className="Sheet1BodyRightTopItem">
               <label>イニシアチブ<br></br>(INITIATIVE)</label>
               <input id="initiative"></input>
             </div>
-            <div className="SheetBodyRightTopItem">
+            <div className="Sheet1BodyRightTopItem">
               <label>移動速度<br></br>(SPEED)</label>
               <input id="speed"></input>
             </div>
-            <div className="SheetBodyRightTopItem">
+            <div className="Sheet1BodyRightTopItem">
               <label>サイズ<br></br>(SIZE)</label>
               <input id="size"></input>
             </div>
-            <div className="SheetBodyRightTopItem">
+            <div className="Sheet1BodyRightTopItem">
               <label>受動知覚<br></br>(PASSIVE PERCEPTION)</label>
               <input id="passive_perception"></input>
             </div>
           </div>
-          <div className="SheetBodyRightMiddle">
+          <div className="Sheet1BodyRightMiddle">
             <Weapon data={props.data}></Weapon>
             <Features data={props.data}></Features>
           </div>
-          <div className="SheetBodyRightBottom">
-            <div className="SheetBodyRightBottomGroup">
+          <div className="Sheet1BodyRightBottom">
+            <div className="Sheet1BodyRightBottomGroup">
               <SpeciesTraits data={props.data}></SpeciesTraits>
               <Feats data={props.data}></Feats>
             </div>
           </div>
         </div>
       </div>
-      <div className="SheetFooter">
-        このページはファンコンテンツ・ポリシーに沿った非公式のファンコンテンツです。ウィザーズ社の認可/許諾は得ていません。題材の一部に、ウィザーズ・オブ・ザ・コースト社の財産を含んでいます。©Wizards of the Coast LLC.
-      </div>
     </div>
   );
 }
 
-export default Sheet;
+export default Sheet1;

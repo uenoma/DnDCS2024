@@ -1,6 +1,7 @@
 import { act } from 'react';
 import './App.css';
-import Sheet from './Sheet';
+import Sheet1 from './Sheet1/Sheet1';
+import Sheet2 from './Sheet2/Sheet2';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -240,7 +241,11 @@ function App() {
           <input type="file" accept=".json" onChange={(e) => { selectedFile(e) }}></input>
         </div>
       </div>
-      <Sheet data={data} />
+      <Sheet1 data={data} />
+      <Sheet2 data={data} />
+      <div className="AppFooter">
+        このページはファンコンテンツ・ポリシーに沿った非公式のファンコンテンツです。ウィザーズ社の認可/許諾は得ていません。題材の一部に、ウィザーズ・オブ・ザ・コースト社の財産を含んでいます。©Wizards of the Coast LLC.
+      </div>
     </div>
   );
 }

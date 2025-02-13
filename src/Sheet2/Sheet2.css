@@ -1,0 +1,209 @@
+.Sheet2 {
+  width: 1060px;
+  height: 1480;
+  margin: 10px;
+	-webkit-text-size-adjust: 100%;	
+  page-break-before: always;
+  display: flex;
+  flex-direction: row;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 5px;
+}
+
+.Sheet2Left {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Sheet2Upper {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Sheet2Ability {
+  width: 200px;
+  border: solid 2px gray;
+}
+
+.Sheet2Ability table {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.Sheet2Ability th, .Sheet2Ability td {
+  border-bottom: solid 1px gray;
+}
+
+.Sheet2Ability input {
+  width: 40px;
+  height: 30px;
+  border: none;
+}
+
+.Sheet2AbilityCaption {
+  border-left: solid 1px gray;
+  padding-left: 10px;  
+}
+
+
+.Sheet2Slot {
+  border: solid 2px gray;
+  margin-left: 10px;
+}
+
+.Sheet2Slot table {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.Sheet2Slot th {
+  border-bottom: solid 1px gray;
+}
+
+
+.Sheet2Slot td {
+  border-bottom: solid 1px gray;
+  text-align: center;
+}
+
+.Sheet2Slot th {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Sheet2SlotItems {
+  font-size: 8px;
+
+}
+
+.Sheet2SlotLevel {
+  width: 40px;
+  user-select: none;
+
+}
+
+.Sheet2SlotTotal input {
+  width: 20px;
+  text-align: center;
+}
+
+.Sheet2SlotColTail {
+  border-right: solid 1px gray;
+}
+
+.Sheet2SpellList {
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Sheet2SpellList table {
+  border: solid 2px gray;
+  width: 100%;
+}
+
+.Sheet2SpellList table th {
+  border-bottom: solid 1px gray;
+}
+
+.Sheet2SpellList table td {
+  border-bottom: solid 1px gray;
+}
+
+.Sheet2SpellListCaption {
+  font-size: 8px;
+  font-weight: normal;
+}
+
+.Sheet2SpellListRow {
+  height: 28px;
+
+}
+
+.Sheet2SpellListRow input {
+  font-size: 10px;
+}
+
+.Sheet2SpellListLevel input {
+  width: 20px;
+  border: none;
+}
+
+.Sheet2SpellListName input {
+  width: 260px;
+  border: none;
+}
+
+.Sheet2SpellListCastingTime input {
+  width: 50px;
+  border: none;
+}
+
+.Sheet2SpellListRange input {
+  width: 30px;
+  border: none;
+}
+
+.Sheet2SpellListButton {
+  font-size: 14px;
+}
+
+.Sheet2SpellListButton label {
+  margin-right: 5px;
+}
+
+.Sheet2SpellLisNotes input {
+  width: 80px;
+  border: none;
+}
+
+.Sheet2SeparatorR {
+  border-right: solid 1px gray;
+}
+
+.Sheet2SeparatorB {
+  border-bottom: solid 1px gray;
+}
+
+.Sheet2SelectNone {
+  user-select: none;
+}
+
+.Appearance {
+  display: flex;
+  flex-direction: column;
+  width: 398px;
+  border: solid 2px gray;
+  margin-left: 10px;
+  background-color: white;
+  height: 300px;
+}
+
+.AppearanceTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.AppearanceContent {
+  height: 100%;
+}
+
+.AppearanceContent textarea{
+  border: none;
+  resize: none;
+  width: 95%;
+  height: 95%;
+  margin: 5px;
+
+}
