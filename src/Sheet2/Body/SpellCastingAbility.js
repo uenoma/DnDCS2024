@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function SpellCastingAbility(props) {
 
   useEffect(() => {
-    if (props.data) {
+    if (props.data && props.data.spell_ability) {
       document.getElementById("SpellCastingModifier").value = props.data.spell_ability.modifier;
       document.getElementById("SpellCastingSaveDC").value = props.data.spell_ability.save_dc;
       document.getElementById("SpellCastingAttackBonus").value = props.data.spell_ability.attack_bonus;
@@ -17,7 +17,7 @@ function SpellCastingAbility(props) {
       <table>
         <tbody>
           <tr>
-            <th colspan="2" className="Sheet2SelectNone">呪文発動能力<br></br>(SPELLCASTING ABILITY)</th>
+            <th colSpan="2" className="Sheet2SelectNone">呪文発動能力<br></br>(SPELLCASTING ABILITY)</th>
           </tr>
           <tr>
             <td><input id="SpellCastingModifier"></input></td>

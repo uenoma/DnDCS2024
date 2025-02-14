@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function Equipment(props) {
 
   useEffect(() => {
-    if (props.data) {
+    if (props.data && props.data.equipment && props.data.equipment.magic_item) {
       document.getElementById("Equipment").value = props.data.equipment.value;
       document.getElementById("MagicItem1").value = props.data.equipment.magic_item[0].name;
       document.getElementById("MagicItem2").value = props.data.equipment.magic_item[1].name;

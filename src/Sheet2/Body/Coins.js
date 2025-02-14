@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function Coins(props) {
 
   useEffect(() => {
-    if (props.data) {
+    if (props.data && props.data.coins) {
       document.getElementById("Coins_cp").value = props.data.coins.cp;
       document.getElementById("Coins_sp").value = props.data.coins.sp;
       document.getElementById("Coins_gp").value = props.data.coins.gp;

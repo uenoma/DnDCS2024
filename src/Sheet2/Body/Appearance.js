@@ -16,7 +16,7 @@ function Appearance(props) {
   }
 
   useEffect(() => {
-    if (props.data) {
+    if (props.data && props.data.appearance) {
       document.getElementById("Appearance").value = props.data.appearance.value;
       if (props.data.appearance.image_url) {
         document.getElementById("ImageUrl").value = props.data.appearance.image_url;

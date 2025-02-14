@@ -10,12 +10,14 @@ function Status(props) {
       document.getElementById('StatusHPMax').value = props.data.hp.max;
       document.getElementById('StatusHitDiceSpent').value = props.data.hp.hit_dice_spent;
       document.getElementById('StatusHitDiceMax').value = props.data.hp.hit_dice;
-      document.getElementById('DeathSavesSuccess1').checked = props.data.death_saves.successes[0];
-      document.getElementById('DeathSavesSuccess2').checked = props.data.death_saves.successes[1];
-      document.getElementById('DeathSavesSuccess3').checked = props.data.death_saves.successes[2];
-      document.getElementById('DeathSavesFailure1').checked = props.data.death_saves.failures[0];
-      document.getElementById('DeathSavesFailure2').checked = props.data.death_saves.failures[1];
-      document.getElementById('DeathSavesFailure3').checked = props.data.death_saves.failures[2];
+      if (props.data.death_saves) {
+        document.getElementById('DeathSavesSuccess1').checked = props.data.death_saves.successes[0];
+        document.getElementById('DeathSavesSuccess2').checked = props.data.death_saves.successes[1];
+        document.getElementById('DeathSavesSuccess3').checked = props.data.death_saves.successes[2];
+        document.getElementById('DeathSavesFailure1').checked = props.data.death_saves.failures[0];
+        document.getElementById('DeathSavesFailure2').checked = props.data.death_saves.failures[1];
+        document.getElementById('DeathSavesFailure3').checked = props.data.death_saves.failures[2];
+      }
     }
   }, [props]);
 

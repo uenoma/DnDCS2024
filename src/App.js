@@ -8,6 +8,44 @@ function App() {
 
   const [data, setData] = useState(null)
 
+  const spellSlotsValues = (level) => {
+
+    const slotNum = [0, 4, 3, 3, 3, 3, 2, 2, 1, 1];
+
+    let values = [];
+    for(let index = 0; index < slotNum[level]; index++) {
+      values.push(document.getElementById('SpellSlotsLv' + level + "_" + (index + 1)).checked);
+    }
+
+    let valueSet = {
+      lv: level,
+      num: document.getElementById('SpellSlotsLv' + level).value,
+      checked: values,
+    };
+
+    return valueSet;
+  }
+
+  const spellsValues = () => {
+
+    let values = [];
+    for(let index = 0; index < 39; index++) {
+      const valueSet = {
+        level: document.getElementById("SpellLevel" + index).value,
+        name: document.getElementById("SpellName" + index).value,
+        casting_time: document.getElementById("SpellCastingTime" + index).value,
+        range: document.getElementById("SpellRange" + index).value,
+        c: document.getElementById("SpellC" + index).checked,
+        r: document.getElementById("SpellR" + index).checked,
+        m: document.getElementById("SpellM" + index).checked,
+        notes: document.getElementById("SpellNotes" + index).value,
+      };
+      values.push(valueSet);
+
+    }
+    return values;
+  }
+
   const exportFile = (e) => {
     const saveData = {
       name: document.getElementById('BasicInfoCharacterName').value,
@@ -193,6 +231,20 @@ function App() {
         attack_bonus: document.getElementById('SpellCastingAttackBonus').value,
       },
 
+      spell_slots: [
+        spellSlotsValues(1),
+        spellSlotsValues(2),
+        spellSlotsValues(3),
+        spellSlotsValues(4),
+        spellSlotsValues(5),
+        spellSlotsValues(6),
+        spellSlotsValues(7),
+        spellSlotsValues(8),
+        spellSlotsValues(9),
+      ],
+
+      spell_list: spellsValues(),
+
       appearance: {
         value: document.getElementById("Appearance").value,
         image_url: document.getElementById("ImageUrl").value,
@@ -230,6 +282,7 @@ function App() {
       }
 
     };
+
 
     const name = saveData.name.length > 0 ? saveData.name : "noname";
     const fileName = name + "_Lv" + saveData.level + ".json";

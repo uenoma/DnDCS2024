@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function Proficiencies(props) {
 
   useEffect(() => {
-    if (props.data) {
+    if (props.data && props.data.proficiency) {
       document.getElementById('armor_light').checked = props.data.proficiency.armor.light;
       document.getElementById('armor_medium').checked = props.data.proficiency.armor.medium;
       document.getElementById('armor_heavy').checked = props.data.proficiency.armor.heavy;

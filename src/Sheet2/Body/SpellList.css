@@ -35,30 +35,40 @@
 .SpellListLevel input {
   width: 20px;
   border: none;
+  text-align: center;
 }
 
 .SpellListName input {
-  width: 260px;
+  width: 270px;
   border: none;
+  height: 20px;
 }
 
 .SpellListCastingTime input {
-  width: 50px;
+  width: 60px;
   border: none;
+  text-align: center;
+  font-size: 10px;
+  height: 20px;
+  height: 20px;
 }
 
 .SpellListRange input {
   width: 30px;
   border: none;
+  text-align: center;
+  font-size: 10px;
+  height: 20px;
 }
 
 .SpellListButton {
-  font-size: 14px;
+  font-size: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 25px;
+  line-height: 20px;
 }
 
 .SpellListButton label {
@@ -68,4 +78,6 @@
 .Sheet2SpellLisNotes input {
   width: 80px;
   border: none;
+  font-size: 10px;
+  height: 20px;;
 }

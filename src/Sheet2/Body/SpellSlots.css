@@ -1,12 +1,14 @@
 .SpellSlots {
   border: solid 2px gray;
   margin-left: 10px;
+  width: 440px;
 }
 
 .SpellSlots table {
   font-size: 12px;
   font-weight: bold;
   text-align: left;
+  width: 100%;
 }
 
 .SpellSlots th {

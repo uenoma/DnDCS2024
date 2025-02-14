@@ -21,7 +21,7 @@ function Sheet2(props) {
       <div className="Sheet2Left">
         <div className="Sheet2Upper">
           <SpellCastingAbility data={props.data}></SpellCastingAbility>
-          <div>
+          <div className="Sheet2UpperRight">
             <div className="Sheet2Logo">
               <label>DUNGEONS & DRAGONS</label>             
             </div>

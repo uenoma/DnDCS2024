@@ -39,6 +39,7 @@
 .AppFooter {
   font-size: 8px;
   margin: 0 10px 10px 10px;
+  white-space: nowrap;
 }
 
 @media print{
