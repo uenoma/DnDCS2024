@@ -176,7 +176,6 @@ function App() {
           damage_dice: document.getElementById('col_damage_dice6').value,
           desc: document.getElementById('col_desc6').value,
         },        
-
       ],
 
 
@@ -187,6 +186,48 @@ function App() {
 
       species_traits: document.getElementById('species_traits').value,
       feats: document.getElementById('feats').value,
+
+      spell_ability: {
+        modifier: document.getElementById('SpellCastingModifier').value,
+        save_dc: document.getElementById('SpellCastingSaveDC').value,
+        attack_bonus: document.getElementById('SpellCastingAttackBonus').value,
+      },
+
+      appearance: {
+        value: document.getElementById("Appearance").value,
+        image_url: document.getElementById("ImageUrl").value,
+      },
+
+      backstory: document.getElementById("Backstory").value,
+      alignment: document.getElementById("Alignment").value,
+
+      languages: document.getElementById("Languages").value,
+
+      equipment: {
+        value: document.getElementById("Equipment").value,
+        magic_item: [
+          {
+            name: document.getElementById("MagicItem1").value,
+            checked: document.getElementById("MagicItemChecked1").checked,
+          },
+          {
+            name: document.getElementById("MagicItem2").value,
+            checked: document.getElementById("MagicItemChecked2").checked,
+          },
+          {
+            name: document.getElementById("MagicItem3").value,
+            checked: document.getElementById("MagicItemChecked3").checked,
+          },
+        ]
+      },
+
+      coins: {
+        cp: document.getElementById("Coins_cp").value,
+        sp: document.getElementById("Coins_sp").value,
+        gp: document.getElementById("Coins_gp").value,
+        ep: document.getElementById("Coins_ep").value,
+        pp: document.getElementById("Coins_pp").value,
+      }
 
     };
 

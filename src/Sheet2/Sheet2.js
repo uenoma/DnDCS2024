@@ -20,24 +20,24 @@ function Sheet2(props) {
     <div className="Sheet2">
       <div className="Sheet2Left">
         <div className="Sheet2Upper">
-          <SpellCastingAbility></SpellCastingAbility>
+          <SpellCastingAbility data={props.data}></SpellCastingAbility>
           <div>
             <div className="Sheet2Logo">
               <label>DUNGEONS & DRAGONS</label>             
             </div>
-            <SpellSlots></SpellSlots>
+            <SpellSlots data={props.data}></SpellSlots>
           </div>
         </div>
         <div className="Sheet2Lower">
-          <SpellList></SpellList>
+          <SpellList data={props.data}></SpellList>
         </div>
       </div>
       <div className="Sheet2Right">
-        <Appearance></Appearance>
-        <Backstory></Backstory>
-        <Languages></Languages>
-        <Equipment></Equipment>
-        <Coins></Coins>
+        <Appearance data={props.data}></Appearance>
+        <Backstory data={props.data}></Backstory>
+        <Languages data={props.data}></Languages>
+        <Equipment data={props.data}></Equipment>
+        <Coins data={props.data}></Coins>
       </div>
     </div>
   );

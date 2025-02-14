@@ -5,6 +5,8 @@ function Backstory(props) {
 
   useEffect(() => {
     if (props.data) {
+      document.getElementById("Backstory").value = props.data.backstory;
+      document.getElementById("Alignment").value = props.data.alignment;
     }
   }, [props]);
 
@@ -18,7 +20,7 @@ function Backstory(props) {
       </div>
       <div className="BackstoryAlignment">
         <div><label>属性 (Alignment)</label></div>
-        <input></input>
+        <input id="Alignment"></input>
       </div>
     </div>
 

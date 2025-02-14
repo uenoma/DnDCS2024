@@ -15,7 +15,7 @@ function SpellList(props) {
         <td className="SpellListName Sheet2SeparatorR"><input></input></td>
         <td className="SpellListCastingTime Sheet2SeparatorR"><input></input></td>
         <td className="SpellListRange Sheet2SeparatorR"><input></input></td>
-        <td className="SpellListButton Sheet2SeparatorR" colspan="3">
+        <td className="SpellListButton Sheet2SeparatorR">
           <label><input type="checkbox"></input>C</label>
           <label><input type="checkbox"></input>R</label>
           <label><input type="checkbox"></input>M</label>
@@ -46,7 +46,7 @@ function SpellList(props) {
           <td>呪文名<br></br>(Name)</td>
           <td>発動時間<br></br>(Casting Time)</td>
           <td>射程<br></br>(Range)</td>
-          <td colspan="3">精神集中, 儀式, 物質要素<br></br>(Concentration, Ritual<br></br>& Required Material)</td>
+          <td>精神集中, 儀式, 物質要素<br></br>(Concentration, Ritual<br></br>& Required Material)</td>
           <td>備考<br></br>(Notes)</td>
         </tr>
         {spellItems()}

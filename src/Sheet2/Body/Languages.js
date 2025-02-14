@@ -5,6 +5,7 @@ function Languages(props) {
 
   useEffect(() => {
     if (props.data) {
+      document.getElementById("Languages").value = props.data.languages;
     }
   }, [props]);
 

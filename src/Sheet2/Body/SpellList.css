@@ -25,11 +25,11 @@
 
 .SpellListRow {
   height: 28px;
-
 }
 
-.SpellListRow input {
-  font-size: 10px;
+.SpellList label {
+  display: flex;
+  flex-direction: row;
 }
 
 .SpellListLevel input {
@@ -54,6 +54,11 @@
 
 .SpellListButton {
   font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
 }
 
 .SpellListButton label {
