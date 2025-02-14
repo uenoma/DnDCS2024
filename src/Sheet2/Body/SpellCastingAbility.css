@@ -1,0 +1,31 @@
+.SpellCastingAbility {
+  width: 200px;
+  border: solid 2px gray;
+}
+
+.SpellCastingAbility table {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.SpellCastingAbility tr {
+  height: 40px;
+}
+
+.SpellCastingAbility th, .SpellCastingAbility td {
+  border-bottom: solid 1px gray;
+}
+
+.SpellCastingAbility input {
+  width: 40px;
+  height: 30px;
+  border: none;
+  margin: 10px 0 10px 0;
+}
+
+.SpellCastingAbilityCaption {
+  border-left: solid 1px gray;
+  padding-left: 10px;  
+}
+

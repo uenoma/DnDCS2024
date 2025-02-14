@@ -1,0 +1,46 @@
+.SpellSlots {
+  border: solid 2px gray;
+  margin-left: 10px;
+}
+
+.SpellSlots table {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.SpellSlots th {
+  border-bottom: solid 1px gray;
+}
+
+
+.SpellSlots td {
+  border-bottom: solid 1px gray;
+  text-align: center;
+}
+
+.SpellSlots th {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.SpellSlotsItems {
+  font-size: 8px;
+
+}
+
+.SpellSlotsLevel {
+  width: 40px;
+  user-select: none;
+
+}
+
+.SpellSlotsTotal input {
+  width: 20px;
+  text-align: center;
+}
+
+.SpellSlotsColTail {
+  border-right: solid 1px gray;
+}

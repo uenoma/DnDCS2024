@@ -1,0 +1,66 @@
+.SpellList {
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.SpellList table {
+  border: solid 2px gray;
+  width: 100%;
+}
+
+.SpellList table th {
+  border-bottom: solid 1px gray;
+}
+
+.SpellList table td {
+  border-bottom: solid 1px gray;
+}
+
+.SpellListCaption {
+  font-size: 8px;
+  font-weight: normal;
+}
+
+.SpellListRow {
+  height: 28px;
+
+}
+
+.SpellListRow input {
+  font-size: 10px;
+}
+
+.SpellListLevel input {
+  width: 20px;
+  border: none;
+}
+
+.SpellListName input {
+  width: 260px;
+  border: none;
+}
+
+.SpellListCastingTime input {
+  width: 50px;
+  border: none;
+}
+
+.SpellListRange input {
+  width: 30px;
+  border: none;
+}
+
+.SpellListButton {
+  font-size: 14px;
+}
+
+.SpellListButton label {
+  margin-right: 5px;
+}
+
+.Sheet2SpellLisNotes input {
+  width: 80px;
+  border: none;
+}

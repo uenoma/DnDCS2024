@@ -5,11 +5,6 @@
 	-webkit-text-size-adjust: 100%;	
 }
 
-@page {
-  size: A4 portrait;
-  margin: 5px;
-}
-
 .Sheet1Header {
   display: flex;
   flex-wrap: wrap;

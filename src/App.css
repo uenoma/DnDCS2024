@@ -31,6 +31,11 @@
   width: 150px;
 }
 
+@page {
+  size: A4 portrait;
+  margin: 5px;
+}
+
 .AppFooter {
   font-size: 8px;
   margin: 0 10px 10px 10px;

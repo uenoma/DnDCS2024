@@ -1,0 +1,30 @@
+.Languages {
+  display: flex;
+  flex-direction: column;
+  width: 398px;
+  border: solid 2px gray;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 100px;
+}
+
+.LanguagesTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.LanguagesContent {
+  height: 90%;
+}
+
+.LanguagesContent textarea{
+  border: none;
+  resize: none;
+  width: 95%;
+  height: 85%;
+  margin: 5px;
+
+}

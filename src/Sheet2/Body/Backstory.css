@@ -1,0 +1,45 @@
+.Backstory {
+  display: flex;
+  flex-direction: column;
+  width: 398px;
+  border: solid 2px gray;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 450px;
+}
+
+.BackstoryTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 1px gray;
+}
+
+.BackstoryContent {
+  height: 100%;
+}
+
+.BackstoryContent textarea{
+  border: none;
+  resize: none;
+  width: 95%;
+  height: 95%;
+  margin: 5px;
+
+}
+
+.BackstoryAlignment {
+  margin: 10px;
+}
+
+.BackstoryAlignment label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.BackstoryAlignment input {
+  width: 95%;
+  border: none;
+  border-bottom: solid 1px gray;
+}
