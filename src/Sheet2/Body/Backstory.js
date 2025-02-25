@@ -5,7 +5,7 @@ function Backstory(props) {
 
   useEffect(() => {
     if (props.data) {
-      document.getElementById("Backstory").value = props.data.backstory;
+      document.getElementById("Backstory").value = props.data.backstory ? props.data.backstory : '';
       document.getElementById("Alignment").value = props.data.alignment;
     }
   }, [props]);

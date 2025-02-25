@@ -5,7 +5,7 @@ function SpeciesTraits(props) {
 
   useEffect(() => {
     if (props.data) {
-      document.getElementById('species_traits').value = props.data.species_traits;
+      document.getElementById('species_traits').value = props.data.species_traits ? props.data.species_traits : '';
     }
   }, [props]);
 

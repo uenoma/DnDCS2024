@@ -5,7 +5,7 @@ function Feats(props) {
 
   useEffect(() => {
     if (props.data) {
-      document.getElementById('feats').value = props.data.feats;
+      document.getElementById('feats').value = props.data.feats ? props.data.feats : '';
     }
   }, [props]);
 

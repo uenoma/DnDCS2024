@@ -10,7 +10,7 @@ function Weapon(props) {
           document.getElementById('col_name' + index).value = action.name;
           document.getElementById('col_attack_bonus' + index).value = action.attack_bonus;
           document.getElementById('col_damage_dice' + index).value = action.damage_dice;
-          document.getElementById('col_desc' + index).value = action.desc;
+          document.getElementById('col_desc' + index).value = action.desc ? action.desc : '';
         }
         index++;
       });

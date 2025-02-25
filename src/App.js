@@ -1,4 +1,4 @@
-import { act } from 'react';
+import { act, version } from 'react';
 import './App.css';
 import Sheet1 from './Sheet1/Sheet1';
 import Sheet2 from './Sheet2/Sheet2';
@@ -48,6 +48,7 @@ function App() {
 
   const exportFile = (e) => {
     const saveData = {
+      ver: "2024",
       name: document.getElementById('BasicInfoCharacterName').value,
       background: document.getElementById('BasicInfoBackground').value,
       class: document.getElementById('BasicInfoClass').value,

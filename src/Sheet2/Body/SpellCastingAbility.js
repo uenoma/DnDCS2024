@@ -8,6 +8,16 @@ function SpellCastingAbility(props) {
       document.getElementById("SpellCastingModifier").value = props.data.spell_ability.modifier;
       document.getElementById("SpellCastingSaveDC").value = props.data.spell_ability.save_dc;
       document.getElementById("SpellCastingAttackBonus").value = props.data.spell_ability.attack_bonus;
+    } else if (props.data) {
+      if (props.data.spell_modifier) {
+        document.getElementById("SpellCastingModifier").value = props.data.spell_modifier;
+      }
+      if (props.data.spell_dc) {
+        document.getElementById("SpellCastingSaveDC").value = props.data.spell_dc;
+      }
+      if (props.data.spell_attack) {
+        document.getElementById("SpellCastingAttackBonus").value = props.data.spell_attack
+      }
     }
   }, [props]);
 

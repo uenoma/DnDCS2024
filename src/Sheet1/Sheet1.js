@@ -17,7 +17,7 @@ function Sheet1(props) {
     if (props.data) {
       document.getElementById('initiative').value = props.data.initiative;
       document.getElementById('speed').value = props.data.speed.walk;
-      document.getElementById('size').value = props.data.size;
+      document.getElementById('size').value = props.data.size ? props.data.size : '';
       document.getElementById('passive_perception').value = props.data.passive_perception;
     }
   }, [props]);

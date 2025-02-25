@@ -5,12 +5,14 @@ function Proficiencies(props) {
 
   useEffect(() => {
     if (props.data && props.data.proficiency) {
-      document.getElementById('armor_light').checked = props.data.proficiency.armor.light;
-      document.getElementById('armor_medium').checked = props.data.proficiency.armor.medium;
-      document.getElementById('armor_heavy').checked = props.data.proficiency.armor.heavy;
+      if (props.data.proficiency.armor) {
+        document.getElementById('armor_light').checked = props.data.proficiency.armor.light;
+        document.getElementById('armor_medium').checked = props.data.proficiency.armor.medium;
+        document.getElementById('armor_heavy').checked = props.data.proficiency.armor.heavy;
+      }
       document.getElementById('shield').checked = props.data.proficiency.shield;
-      document.getElementById('weapons').value = props.data.proficiency.weapons;
-      document.getElementById('tools').value = props.data.proficiency.tools;
+      document.getElementById('weapons').value = props.data.proficiency.weapons ? props.data.proficiency.weapons : '';
+      document.getElementById('tools').value = props.data.proficiency.tools ? props.data.proficiency.tools : '';
     }
   }, [props]);
 

@@ -5,11 +5,16 @@ function BasicInfo(props) {
 
   useEffect(() => {
     if (props.data) {
+      const background = props.data.background.type ? props.data.background.type : props.data.background;
       document.getElementById('BasicInfoCharacterName').value = props.data.name;
-      document.getElementById('BasicInfoBackground').value = props.data.background;
-      document.getElementById('BasicInfoClass').value = props.data.class;
+      document.getElementById('BasicInfoBackground').value = background;
+      if (props.data.class) {
+        document.getElementById('BasicInfoClass').value = props.data.class;
+      }
+      if (props.data.subclass) {
+        document.getElementById('BasicInfoSubclass').value = props.data.subclass;
+      }
       document.getElementById('BasicInfoSpecies').value = props.data.species;
-      document.getElementById('BasicInfoSubclass').value = props.data.subclass;
     }
   }, [props]);
 
