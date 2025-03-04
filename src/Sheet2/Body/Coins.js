@@ -28,12 +28,12 @@ function Coins(props) {
           <input id="Coins_sp"></input>
         </div>
         <div>
-          <div><label>GP</label></div>
-          <input id="Coins_gp"></input>
-        </div>
-        <div>
           <div><label>EP</label></div>
           <input id="Coins_ep"></input>
+        </div>
+        <div>
+          <div><label>GP</label></div>
+          <input id="Coins_gp"></input>
         </div>
         <div>
           <div><label>PP</label></div>
